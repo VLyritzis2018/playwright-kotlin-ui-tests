@@ -10,8 +10,37 @@ This project contains automated UI tests built with:
 
 The framework validates sorting and search functionality for the Housing page of https://madrid.craigslist.org/ 
 
-Test Report Location
+## Project Structure
 
+playwright/
+│
+├── README.md
+├── gradlew
+├── settings.gradle.kts
+│
+└── app/
+    ├── build.gradle.kts
+    └── src/
+        ├── main/kotlin/org/example/
+        │   └── App.kt
+        │
+        └── test/kotlin/org/example/
+            ├── BaseTest.kt
+            ├── HousingSortingTests.kt
+            │
+            ├── pages/
+            │   └── HousingPage.kt
+            │
+            ├── models/
+            │   └── PriceSort.kt
+            │
+            └── helpers/
+                ├── Navigation.kt
+                ├── UrlConstants.kt
+                ├── ConstStrings.kt
+                └── LoggerHelper.kt
+
+## Test Report Location
 After executing the automated tests, the HTML execution report can be found at: app/build/reports/tests/test/index.html
 
 Open this file in any browser to review:
@@ -22,6 +51,7 @@ Open this file in any browser to review:
 - Execution duration
 - Test summary
 
+## Test Scenarios
 TC-001 — Verify Default Sorting Options Are Available
 Objective: Validate that the Housing page displays the default sorting options when the sort dropdown menu is opened.
 
