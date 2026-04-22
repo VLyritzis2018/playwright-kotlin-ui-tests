@@ -12,6 +12,7 @@ The framework validates sorting and search functionality for the Housing page of
 
 ## Project Structure
 
+```text
 playwright/
 │
 ├── README.md
