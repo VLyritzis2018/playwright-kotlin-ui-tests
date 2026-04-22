@@ -40,7 +40,7 @@ playwright/
                 ├── UrlConstants.kt
                 ├── ConstStrings.kt
                 └── LoggerHelper.kt
-
+```
 ## Test Report Location
 After executing the automated tests, the HTML execution report can be found at: app/build/reports/tests/test/index.html
 
